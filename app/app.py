@@ -32,24 +32,5 @@ db.init_app(app)
 
 user_controller=UserController(app)
 
-# # 导入模型
-# from app.models.user import User
-# from app.dao.user_dao import UserDao
-
-
-
-# # 导入视图
-# from app.views.user_controller import LoginView
-# from app.views.index import IndexView
-
-
-
-# #其他配置和路由导入
-
-# app.add_url_rule('/',view_func=IndexView.as_view('index'))
-# app.add_url_rule('/login',view_func=LoginView.as_view('login'))
-# app.add_url_rule('/logout',view_func=IndexView.as_view('logout'))
-
-
 if __name__=='__main__':
     app.run()
