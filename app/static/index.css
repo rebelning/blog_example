@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 100%;
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header h1 {
+  margin: 0;
+}
+.logout-button {
+  background-color: #ff5f5f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.logout-button:hover {
+  background-color: #ff3b3b;
+}
+.red {
+  color: #ff5f5f;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* 让容器占满整个屏幕高度 */
+}
+
+.sidebar, .content, .info {
+  flex-grow: 1;
+  background-color: #f5f5f5; /* 设置背景颜色为灰色 */
+}
+.content {
+  width: 60%;
+}
+
+.sidebar {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.info {
+  width: 20%;
+  margin-left: 10px;
+}

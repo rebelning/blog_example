@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog Home</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+    
+<body>
+    <div class="header">
+        
+        <form action="/logout" method="post">
+            <button class="logout-button" type="submit">Logout</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Hot Articles</h2>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+                <!-- Add more hot articles here -->
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Article Title</h2>
+            <p>Article content goes here...</p>
+        </div>
+        <div class="info">
+            <h2>My Info</h2>
+            <p>Id:{{user.id}}</p>
+            <p>Name: {{user.username}}</p>
+            <p>Email: john.doe@example.com</p>
+            <p>Location: City, Country</p>
+        </div>
+    </div>
+    
+</body>
+</html>
